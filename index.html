@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>currency</title>
+</head>
+<body>
+    <!-- <div class="price">
+        <span class="amount">200</span> USD
+        <div class="egp">price In EGP <span></span> </div>
+        <div class="sar">price In SAR <span></span> </div>
+    </div> -->
+
+
+    <div class="currency">
+        <h1 class="headTitle">learn About your selected price in USD</h1>
+        <div class="currencyContainer">
+            <div class="is">
+                <input type="number" class="numTo">
+                <select name="" class="select2" onmousedown="if(this.options.length>5){this.size=5;}" onchange="this.blur()"  onblur="this.size=0;"></select>
+            </div>
+            <button class="getBtn">getResult</button>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
