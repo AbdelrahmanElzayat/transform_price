@@ -47,9 +47,11 @@ fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey=e53ea6ab4e584b04b
     }
     Btn.onclick =  () => {
         output = selectto.options[selectto.selectedIndex].value;
+        outputTxt = selectto.options[selectto.selectedIndex].innerHTML;
+        console.log(outputTxt);
         console.log(output); 
         console.log(numTo.value * output);       
-        result.innerHTML= `${numTo.value * output} USD`;
+        result.innerHTML= `${numTo.value * output} ${outputTxt}`;
         result.style.display = "block";
     }
 

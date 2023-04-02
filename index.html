@@ -16,17 +16,17 @@
 
 
     <div class="currency">
-        <h1 class="headTitle">learn About your selected price in USD</h1>
+        <h1 class="headTitle">transform USD price to your selection price</h1>
         <div class="currencyContainer">
             <div class="is">
                 <input type="number" class="numTo">
-                <select name="" class="select2" onmousedown="if(this.options.length>5){this.size=5;}" onchange="this.blur()"  onblur="this.size=0;"></select>
+                <!-- <input list="web-dev" name="web-dev" id="webDev"> -->
+                <select id="web-dev" name="" class="select2" onmousedown="if(this.options.length>5){this.size=5;}" onchange="this.blur()"  onblur="this.size=0;"></select>
             </div>
             <button class="getBtn">getResult</button>
             <div class="result"></div>
         </div>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>
